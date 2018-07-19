@@ -8,7 +8,7 @@ section{
 .module{
 	width: 33.3%;
 	height: 20%;
-	background: red;
+	/* background: red; */
 	float: left;
 	position: relative;
 }
