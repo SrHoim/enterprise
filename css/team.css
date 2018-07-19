@@ -1,0 +1,15 @@
+.head-right{
+	background: #00c0ff;
+	color: #fff;
+}
+.head-lift{
+	background: #fff;
+	color: #888;
+	transition: 0.3s;
+}
+.head-lift:hover{
+	color: #00c0ff;
+}
+.head-right:hover{
+	color: #fff;
+}
