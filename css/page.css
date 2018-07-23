@@ -139,7 +139,7 @@ body{
 }
 .specific{
 	width: 33.3%;
-	background: skyblue;
+	/* background: skyblue; */
 	height: 50%;
 	float: left;
 	position: relative;
