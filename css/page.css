@@ -63,10 +63,13 @@ body{
 	width: 100%;
 	height: 531px;
 	/* background: yellow; */
+	position: relative;
 }
 .banner-picture img{
 	width: 100%;
 	height: 531px;
+	position: absolute;
+	z-index: 5;
 }
 #banner .point{
 	width: 144px;
@@ -96,6 +99,8 @@ body{
 	line-height: 60px;
 	border-style: none;
 	transition: 0.5s;
+	outline: none;
+	z-index: 10;
 }
 .first:hover,.last:hover{
 	background-color: #00c0ff;
