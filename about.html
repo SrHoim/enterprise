@@ -1,29 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>武汉雅禾星烁文化传播有限公司-星烁红人馆</title>
 	<link rel="stylesheet" href="css/about.css">
-	<link rel="shortcut icon" href="imgs/5a77f8ed7029b.png">
 	<link rel="stylesheet" href="css/page.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="shortcut icon" href="imgs/5a77f8ed7029b.png">
 </head>
+
 <body>
 	<!-- 侧导航开始 -->
 	<div id="navigation">
 		<div class="star">
 			<a href="">
 				<img src="imgs/5a77f8ed7029b.png" alt="">
-				<link rel="stylesheet" href="css/public.css">
 			</a>
 		</div>
 		<ul>
-			<a href="page.html" target="_self"><li>首页</li></a>
-			<a href="about.html" target="_self"><li class="nav">关于我们</li></a>
-			<a href="red.html" target="_self"><li>星烁红人</li></a>
-			<a href="collaborate.html" target="_self"><li>合作共赢</li></a>
-			<a href="scheme.html" target="_self"><li>栏目策划</li></a>
-			<a href="join.html" target="_self"><li>加入我们</li></a>
-			<a href="NEWS.html" target="_self"><li>星烁NEWS</li></a>
+			<a href="page.html" target="_self">
+				<li>
+					<div class="liBox">
+						<div class="liBox1">首页</div>
+						<div class="liBox2">首页</div>
+					</div>
+				</li>
+			</a>
+			<a href="about.html" target="_self">
+				<li class="nav">
+					<div class="liBox">
+						<div class="liBox1">关于我们</div>
+						<div class="liBox2">关于我们</div>
+					</div>
+				</li>
+			</a>
+			<a href="red.html" target="_self">
+				<li>
+					<div class="liBox">
+						<div class="liBox1">星烁红人</div>
+						<div class="liBox2">星烁红人</div>
+					</div>
+				</li>
+			</a>
+			<a href="collaborate.html" target="_self">
+				<li>
+					<div class="liBox">
+						<div class="liBox1">合作共赢</div>
+						<div class="liBox2">合作共赢</div>
+					</div>
+				</li>
+			</a>
+			<a href="scheme.html" target="_self">
+				<li>
+					<div class="liBox">
+						<div class="liBox1">栏目策划</div>
+						<div class="liBox2">栏目策划</div>
+					</div>
+				</li>
+			</a>
+			<a href="join.html" target="_self">
+				<li>
+					<div class="liBox">
+						<div class="liBox1">加入我们</div>
+						<div class="liBox2">加入我们</div>
+					</div>
+				</li>
+			</a>
+			<a href="NEWS.html" target="_self">
+				<li>
+					<div class="liBox">
+						<div class="liBox1">星烁NEWS</div>
+						<div class="liBox2">星烁NEWS</div>
+					</div>
+				</li>
+			</a>
 		</ul>
 	</div>
 	<div class="navigation-right">
@@ -36,7 +88,9 @@
 	<!-- 头部开始 -->
 	<header>
 		<div class="head-lift">公司简介</div>
-		<a href="team.html" target="_self"><div class="head-right">团队及服务</div></a>
+		<a href="team.html" target="_self">
+			<div class="head-right">团队及服务</div>
+		</a>
 	</header>
 	<!-- 头部结束 -->
 
@@ -66,4 +120,18 @@
 	</footer>
 	<!-- 底部结束 -->
 </body>
+
 </html>
+<script>
+	//侧导航
+	let liBox = document.querySelectorAll('.liBox');
+	let lis = document.querySelectorAll('li');
+	for (let i = 0; i < lis.length; i++) {
+		lis[i].onmouseenter = function () {
+			liBox[i].style.transform = 'translate(' + 0 + ',' + (-30) + 'px)';
+		}
+		lis[i].onmouseleave = function () {
+			liBox[i].style.transform = 'translate(' + 0 + ',' + 0 + 'px)';
+		}
+	}
+</script>

@@ -31,7 +31,26 @@ body{
 	color: #333;
 }
 #navigation ul li{
+	height: 30px;
+	width: 157px;
 	margin-left: 40px;
+	overflow: hidden;
+}
+.liBox{
+	width: 160px;
+	height: 60px;
+	/* background: #f90; */
+	transition: 0.2s;
+}
+.liBox1,.liBox2{
+	width: 160px;
+	height: 30px;
+}
+.liBox1{
+	/* background: red; */
+}
+.liBox2{
+	/* background: green; */
 }
 #navigation ul li:hover{
 	cursor: pointer;
